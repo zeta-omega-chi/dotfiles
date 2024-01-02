@@ -1,14 +1,9 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
-  { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = true },
-  { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.rose-pine", enabled = true },
   { import = "astrocommunity.colorscheme.catppuccin", enabled = true },
   { import = "astrocommunity.colorscheme.dracula-nvim", enabled = true },
-  { import = "astrocommunity.colorscheme.everforest", enabled = true },
-  { import = "astrocommunity.colorscheme.github-nvim-theme", enabled = true },
-  { import = "astrocommunity.colorscheme.poimandres-nvim", enabled = true },
   { -- further customize the options set by the community
     "catppuccin",
     opts = {
