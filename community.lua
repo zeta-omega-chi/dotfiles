@@ -1,8 +1,6 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
-  { import = "astrocommunity.colorscheme.rose-pine", enabled = true },
-  { import = "astrocommunity.colorscheme.catppuccin", enabled = true },
   { import = "astrocommunity.colorscheme.dracula-nvim", enabled = true },
   { -- further customize the options set by the community
     "catppuccin",
@@ -32,11 +30,9 @@ return {
   { import = "astrocommunity.completion.tabnine-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
-  { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.markdown-and-latex.vimtex" },
-  { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.register.nvim-neoclip-lua" },
 }
