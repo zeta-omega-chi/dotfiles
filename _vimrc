@@ -47,7 +47,14 @@
 call plug#begin()
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
-Plug 'easymption/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
+  map  <Leader>f <Plug>(easymotion-bd-f)
+  nmap <Leader>f <Plug>(easymotion-overwin-f)
+  nmap s <Plug>(easymotion-overwin-f2)
+  map <Leader>L <Plug>(easymotion-bd-jk)
+  nmap <Leader>L <Plug>(easymotion-overwin-line)
+  map  <Leader>w <Plug>(easymotion-bd-w)
+  nmap <Leader>w <Plug>(easymotion-overwin-w)
 Plug 'tomasiser/vim-code-dark'
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline' 
@@ -164,7 +171,6 @@ noremap <silent> <leader>n :bn<CR>
 noremap <silent> <leader>/ :noh<CR>
 noremap <silent> <leader>q :wq<CR>
 noremap <silent> <leader>e :NERDTreeToggle<CR>
-noremap <leader>f :NERDTreeFind<CR>
 nnoremap <C-A> ggVG
 
 
