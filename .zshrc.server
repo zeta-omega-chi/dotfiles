@@ -19,6 +19,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias q="cd .."
+alias dps="docker ps"
+alias di="docker image"
+alias dc="docker container"
+alias dv="docker volume"
 alias v="vim"
 alias ls="exa"
 alias ll="exa -l"
