@@ -53,3 +53,5 @@ paste () {
     echo ".$extension"
   fi
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

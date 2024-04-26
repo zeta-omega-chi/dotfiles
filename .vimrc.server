@@ -1,48 +1,37 @@
 " vim-plug: 
 call plug#begin()
 Plug 'tomasiser/vim-code-dark'
-let g:easy_align_delimiters = {
-\ '>': { 'pattern': '>>\|=>\|>' },
-\ '/': {
-\     'pattern':         '//\+\|/\*\|\*/',
-\     'delimiter_align': 'l',
-\     'ignore_groups':   ['!Comment'] },
-\ ']': {
-\     'pattern':       '[[\]]',
-\     'left_margin':   0,
-\     'right_margin':  0,
-\     'stick_to_left': 0
-\   },
-\ ')': {
-\     'pattern':       '[()]',
-\     'left_margin':   0,
-\     'right_margin':  0,
-\     'stick_to_left': 0
-\   },
-\ 'd': {
-\     'pattern':      ' \(\S\+\s*[;=]\)\@=',
-\     'left_margin':  0,
-\     'right_margin': 0
-\   }
-\ }
-Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline' 
 Plug 'vim-airline/vim-airline-themes' 
 Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
+-let g:easy_align_delimiters = {
+-\ '>': { 'pattern': '>>\|=>\|>' },
+-\ '/': {
+-\     'pattern':         '//\+\|/\*\|\*/',
+-\     'delimiter_align': 'l',
+-\     'ignore_groups':   ['!Comment'] },
+-\ ']': {
+-\     'pattern':       '[[\]]',
+-\     'left_margin':   0,
+-\     'right_margin':  0,
+-\     'stick_to_left': 0
+-\   },
+-\ ')': {
+-\     'pattern':       '[()]',
+-\     'left_margin':   0,
+-\     'right_margin':  0,
+-\     'stick_to_left': 0
+-\   },
+-\ 'd': {
+-\     'pattern':      ' \(\S\+\s*[;=]\)\@=',
+-\     'left_margin':  0,
+-\     'right_margin': 0
+-\   }
+-\ }
 Plug 'easymotion/vim-easymotion'
-" <Leader>f{char} to move to {char}
-map  <Leader>f <Plug>(easymotion-bd-f)
-nmap <Leader>f <Plug>(easymotion-overwin-f)
-" s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-overwin-f2)
-" Move to line
-map <Leader>L <Plug>(easymotion-bd-jk)
-nmap <Leader>L <Plug>(easymotion-overwin-line)
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+nmap s <Plug>(easymotion-jumptoanywhere)
 Plug 'preservim/nerdtree'
 Plug 'SirVer/ultisnips'
 let g:UltiSnipsExpandTrigger = '<tab>'
@@ -116,7 +105,6 @@ nmap Q <Nop>
 " SET jj to <ESC> under insertion mode
 imap jj <Esc>
 imap jk <Esc>
-noremap <space> za
 noremap <silent> <leader>d :bdelete<CR>
 noremap <silent> <leader>p :bp<CR>
 noremap <silent> <leader>n :bn<CR>
